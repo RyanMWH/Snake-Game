@@ -1,16 +1,22 @@
 # Snake Game
 
-A classic Snake game built using Python. The game features both a single-player mode and a two-player competitive mode that introduces mechanics inspired by Tron, where players can collide with each other. This README provides an overview of the game's setup, gameplay, and installation.
+This is a simple but engaging snake game built using Python and the Pygame library, designed with both single-player and two-player modes. Players control a snake that grows in length as it eats apples, avoiding walls and, in two-player mode, the opponent's snake as well. The two-player adaptation provides a unique competitive twist.
 
-## Game Modes
-- **Single Player Mode**: Control the snake to collect food and grow as long as possible without colliding with the walls or yourself.
-- **Two Player Mode**: Compete against another player! In this mode, each player controls a separate snake, and collisions can occur based on Tron-style mechanics. The collision is managed by tracking the positions of both players' snakes in an array.
+## How to Play
+- **Single Player Mode**: Control your snake with arrow keys to eat apples that randomly appear on the screen. Each apple consumed will make your snake grow longer. Avoid hitting the walls or yourself to keep playing!
+- **Two Player Mode**: Compete against another player! Each player controls their own snake, avoiding collisions with walls, their own body, and the other player’s snake. Collisions are tracked in an array for both players, enabling detection of wall, self, and opponent collisions.
+
+### Controls
+- **Single Player**:
+  - Arrow Keys: Move the snake.
+- **Two Player**:
+  - Player 1: Arrow keys.
+  - Player 2: WASD keys.
 
 ## Features
-- **Dynamic Gameplay**: The snake's speed increases as you progress.
-- **Collision Detection**: Detects wall, self, and in the case of two-player mode, opponent collisions.
-- **Score Tracking**: Your score increases as you collect food, and high scores are displayed.
-- **Player Control**: Simple controls for each player with adjustable key mappings.
+- **Random Apple Generation**: Apples appear at random locations on the screen after each one is eaten.
+- **Two Player Mode**: Each player controls a separate snake in a competitive mode with collision detection based on the "Tron" mechanic. The game ends if either player collides with a wall, themselves, however, when a head collides with a tail or body that is part of the opponent's body that section will be cut off.
+- **Game Menu**: A main menu allows you to select single-player, two-player, or exit the game.
 
 ## Requirements
 - Python 3.x
